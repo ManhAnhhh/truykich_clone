@@ -116,21 +116,45 @@
       <section class="items position-relative">
         <div class="container title-items nav-lav">
           <div class="row justify-content-center">
-            <div class="col-lg-1 col-md-2 col-sm-2 pt-2 pb-2 text-center item">AKM</div>
-            <div class="col-lg-1 col-md-2 col-sm-2 pt-2 pb-2 text-center item">AWM</div>
-            <div class="hide-nav-mobile col-lg-1 col-md-2 col-sm-2 pt-2 pb-2 text-center item">VSSM</div>
-            <div class="hide-nav-mobile col-lg-1 col-md-2 col-sm-2 pt-2 pb-2 text-center item">
+            <div class="col-lg-1 col-md-2 col-sm-2 pt-2 pb-2 text-center item">
+              AKM
+            </div>
+            <div class="col-lg-1 col-md-2 col-sm-2 pt-2 pb-2 text-center item">
+              AWM
+            </div>
+            <div
+              class="hide-nav-mobile col-lg-1 col-md-2 col-sm-2 pt-2 pb-2 text-center item"
+            >
+              VSSM
+            </div>
+            <div
+              class="hide-nav-mobile col-lg-1 col-md-2 col-sm-2 pt-2 pb-2 text-center item"
+            >
               UMP45
             </div>
-            <div class="hide-nav-mobile col-lg-1 col-md-2 col-sm-2 pt-2 pb-2 text-center item">
+            <div
+              class="hide-nav-mobile col-lg-1 col-md-2 col-sm-2 pt-2 pb-2 text-center item"
+            >
               M1911
             </div>
-            <div class="hide-nav-mobile col-lg-1 col-md-2 col-sm-2 pt-2 pb-2 text-center item">SK12</div>
-            <div class="hide-nav-mobile col-lg-1 col-md-2 col-sm-2 pt-2 pb-2 text-center item">RPK</div>
-            <div class="hide-nav-mobile col-lg-1 col-md-2 col-sm-2 pt-2 pb-2 text-center item">KURI</div>
+            <div
+              class="hide-nav-mobile col-lg-1 col-md-2 col-sm-2 pt-2 pb-2 text-center item"
+            >
+              SK12
+            </div>
+            <div
+              class="hide-nav-mobile col-lg-1 col-md-2 col-sm-2 pt-2 pb-2 text-center item"
+            >
+              RPK
+            </div>
+            <div
+              class="hide-nav-mobile col-lg-1 col-md-2 col-sm-2 pt-2 pb-2 text-center item"
+            >
+              KURI
+            </div>
           </div>
         </div>
-        <img src="./assets/img/akm.png" alt="" />
+        <img class="img-character" src="./assets/img/akm.png" alt="" />
         <div class="infor">
           <div class="title">AKM</div>
           <p>
@@ -205,18 +229,32 @@
       const img = [
         "./assets/img/akm.png",
         "./assets/img/awm.png",
+        "./assets/img/VSSM.png",
         "./assets/img/mp5a3.png",
-        "./assets/img/M1911.png",
-        "./assets/img/SK12.png",
-        "./assets/img/RPK.png",
-        "./assets/img/KURI.png",
-      ]
+        "./assets/img/m1911.png",
+        "./assets/img/s12k.png",
+        "./assets/img/rpk.png",
+        "./assets/img/kuri.png",
+      ];
+      const desc = [
+        "Được sản xuất từ Nga, AKM được sử dụng rộng rãi trên thế giới bởi giá thành rẻ, hỏa lực mạnh, độ tin cậy cao, độ bền và thiết kế đơn giản của nó. AKM có mặt trong hầu hết các cuộc xung đột vũ trang , sử dụng đạn hạng nặng và có 2 chế độ, bắn từng viên và bắn tự động",
+        "AWM là dòng súng bắn tỉa được biên chế rộng rãi trong quân đội Anh, được coi là chuẩn mực của sự chính xác của các loại súng bắn tỉa trên toàn thế giới. Sở hữu tầm bắn lên tới 1500m, hộp đạn có thể tháo rời, AWM là 1 trong các vũ khí thành công nhất tại Anh Quốc.",
+        "Phiên bản hiện đại hóa và cải tiến của dòng súng bắn tỉa vi âm VSS, bắn đạn hạng trung và có thể bắn tự động hoặc bán tự động.",
+        "Súng tiểu liên chiến đấu dành riêng cho lực lượng đặc biệt, được trang bị thước ngắm, bắn đạn hạng nhẹ. CÓ 2 chế độ bắn: từng viên và tự động.",
+        "Trải qua nhiều cuộc chiến và được gọi là phòng tuyến cuối cùng, bắn đạn hạng trung và chỉ có thể bắn bán tự động",
+        "Cấu tạo và cách nạp đạn tương tự như súng trường dòng AK, hỏa lực cực kì mạnh, bắn đạn shotgun, có thể bắn tự động liên tục",
+        "Súng máy hạng nhẹ được thiết kế theo kiểu AKM. bắn đạn hạng nặng và chỉ có thể bắn tự động",
+        "Dao Kuri thiết kế hiện đại với lưỡi được uốn cong và là  vũ khí đa năng được sử dụng trong quân đội.",
+      ];
       const item = document.querySelectorAll(".item");
-      item.forEach((e,index) => {
-        e.onclick = () => {
-          console.log("e");
-        }
-      })
+      item.forEach((e, index) => {
+        e.onclick = (e) => {
+          document.querySelector(".img-character").src = img[index];
+          document.querySelector(".infor .title").innerHTML =
+            e.target.innerText;
+          document.querySelector(".infor p").innerHTML = desc[index];
+        };
+      });
     </script>
   </body>
 </html>
