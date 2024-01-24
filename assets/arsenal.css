@@ -1,0 +1,57 @@
+section.banner-arsenal {
+  background-image: url(./img/bg-allvk-mb.jpg);
+  height: 100vh;
+  background-size: cover;
+}
+section.banner-arsenal h2 {
+  bottom: 5.208vw;
+  right: 5.208vw;
+  font-size: 4.8vw;
+  font-weight: 700;
+}
+section.items {
+  background-image: url(./img/bg-khovk.jpg);
+  background-size: cover;
+  height: 100vh;
+  padding: 64px 0;
+}
+.items > img {
+  position: absolute;
+  width: 80%;
+  right: 0;
+}
+
+.title-items .item {
+  background: hsla(0, 0%, 100%, 0.02);
+  border-bottom: 0.117vw solid hsla(0, 0%, 100%, 0.1);
+  color: hsla(0, 0%, 100%, 0.5);
+  text-transform: uppercase;
+  margin: 0 4px;
+  padding: 6px;
+}
+.title-items .item:hover {
+  cursor: pointer;
+  background: 50% / cover no-repeat url(./img/wp-bar-acc.png);
+}
+
+.items .infor {
+  color: #fff;
+  left: 8.28125vw;
+  position: absolute;
+  top: 29.375vw;
+}
+.items .infor div.title {
+  font-size: 2.695vw;
+  font-weight: 700;
+  text-align: left;
+  text-transform: uppercase;
+}
+.items .infor p {
+  width: 31.25vw;
+}
+@media (max-width:576px) {
+  .hide-nav-mobile {
+    display: none;
+  }
+}
+

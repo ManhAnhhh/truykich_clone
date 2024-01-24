@@ -1,0 +1,55 @@
+section.banner-game {
+  background-image: url(./img/bg-allnv.jpg);
+  background-size: cover;
+  height: 100vh;
+}
+section.banner-game h2 {
+  margin-top: 200px;
+  font-size: 4.8vw;
+  font-weight: 700;
+  color: #ccc;
+}
+section.characters-in-game {
+  background-image: url(./img/nv1.jpg);
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+}
+
+.content {
+  position: absolute;
+  top: 50px;
+  left: 20px;
+  width: 300px;
+}
+.content h2 {
+  font-weight: 700;
+}
+.content > p {
+  text-align: justify;
+  height: 120px;
+}
+.items {
+  display: flex;
+  gap: 10px;
+  border-radius: 4px;
+}
+.items .img-item {
+  padding: 0 2px;
+  border: 1px solid rgba(0, 0, 0, 0);
+}
+.items .img-item:hover {
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  opacity: 0.8;
+}
+.items p {
+  text-align: center;
+  margin-bottom: 2px;
+}
+.content .title {
+  text-transform: uppercase;
+  margin: 8px 0;
+  border-bottom: 2px solid #ccc;
+}

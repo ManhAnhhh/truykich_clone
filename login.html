@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đăng nhập</title>
+
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/203ae9be09.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      rel="shortcut icon"
+      href="./assets/img/icon_title.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./assets/login.css" />
+  </head>
+  <body>
+    <div id="container-login">
+      <div class="main">
+        <input type="checkbox" id="chk" aria-hidden="true" />
+        <div class="signup">
+          <form id="frmSignUp" method="post">
+            <label class="lab" for="chk" aria-hidden="true">Đăng nhập</label>
+            <input
+              type="email"
+              name="email"
+              placeholder="Email"
+              required=""
+              id="login-email"
+            />
+            <div class="InputContainer" style="position: relative">
+              <input
+                type="password"
+                name="pswd"
+                placeholder="Mật khẩu"
+                required=""
+                id="login-password"
+              />
+              <div class="icon-eyes">
+                <i class="fas fa-eye-slash"></i>
+              </div>
+            </div>
+            <div
+              id="text-error"
+              style="
+                font-size: 14px;
+                display: none;
+                margin-left: 72px;
+                margin-top: 16px;
+                color: lightcoral;
+                font-weight: bold;
+              "
+            >
+              Tài khoản hoặc mật khẩu không đúng
+            </div>
+            <button class="btn" id="btnLogin">Đăng nhập</button>
+          </form>
+        </div>
+        <div class="login">
+          <form method="posts">
+            <label class="lab" for="chk" aria-hidden="true">Đăng ký</label>
+            <input
+              type="text"
+              name="txtName"
+              placeholder="Họ và tên"
+              id="signup-userName"
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="Email"
+              id="signup-email"
+            />
+            <div class="InputContainer" style="position: relative">
+              <input
+                type="password"
+                name="pswd"
+                placeholder="Mật khẩu"
+                id="signup-password"
+              />
+              <div class="icon-eyes">
+                <i class="fas fa-eye-slash"></i>
+              </div>
+            </div>
+            <button class="btn" id="btnSignup">Đăng ký</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="./js/login.js"></script>
+  </body>
+</html>

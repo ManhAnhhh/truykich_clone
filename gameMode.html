@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chế độ chơi</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+  <link rel="shortcut icon" href="./assets/img/icon_title.ico" type="image/x-icon" />
+  <script src="https://kit.fontawesome.com/203ae9be09.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./assets/style.css" />
+  <link rel="stylesheet" href="./assets/gameMode.css" />
+
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1 class="logo-top" title="TRUY KÍCH PC: GAME FPS MỚI RA MẮT">
+      <a title="TRUY KÍCH PC" href="#"><img src="./assets/img/logo_top.png"
+          alt="TRUY KÍCH PC: GAME FPS MỚI RA MẮT" /></a>
+    </h1>
+    <!-- nav -->
+    <ul class="nav nav-lap">
+      <li class="nav-item">
+        <a href="/">Trang chủ</a>
+      </li>
+      <li class="nav-item">
+        <a href="">Trò chơi <i></i></a>
+        <ul class="sub-nav">
+          <li><a href="gameMode.html">Chế độ</a></li>
+          <li><a href="characterGame.html">Nhân vật</a></li>
+          <li><a href="arsenal.html">Kho vũ khí</a></li>
+        </ul>
+      </li>
+      <li class="nav-item"><a href="#">Tin tức</a></li>
+      <li class="nav-item"><a href="#f">Hỗ trợ</a></li>
+      <li class="nav-item">
+        <a href="">Mạng xã hội <i></i></a>
+        <ul class="sub-nav">
+          <li><a href="">Fanpage</a></li>
+          <li><a href="">Group</a></li>
+          <li><a href="">Youtobe</a></li>
+        </ul>
+      </li>
+    </ul>
+
+    <div class="container-mobile">
+      <ul class="nav nav-mobile">
+        <li class="nav-item">
+          <a href="/">Trang chủ</a>
+        </li>
+        <ul class="sub-nav-mobile" style="padding-left: 0">
+          <li class="nav-item">
+            <a href="">Trò chơi <i></i></a>
+            <ul class="sub-nav-2">
+              <li><a href="gameMode.html">Chế độ</a></li>
+              <li><a href="characterGame.html">Nhân vật</a></li>
+              <li><a href="arsenal.html">Kho vũ khí</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a href="#">Tin tức</a></li>
+          <li class="nav-item"><a href="#f">Hỗ trợ</a></li>
+          <li class="nav-item">
+            <a href="">Mạng xã hội <i></i></a>
+            <ul class="sub-nav-2">
+              <li><a href="">Fanpage</a></li>
+              <li><a href="">Group</a></li>
+              <li><a href="">Youtobe</a></li>
+            </ul>
+          </li>
+        </ul>
+      </ul>
+      <button class="btn icon-list-menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+    <div class="userName"></div>
+    <button class="log-in">
+      <span class="circle" aria-hidden="true">
+        <span class="icon arrow"></span>
+      </span>
+      <span class="button-text">Đăng nhập</span>
+    </button>
+
+    <button class="btn log-out">
+      <i class="fa-solid fa-right-from-bracket"></i>
+    </button>
+  </header>
+  <main>
+    <section class="banner-game-mode d-flex justify-content-center align-items-center">
+      <h2>Chế độ chiến đấu</h2>
+    </section>
+    <section class="slider-game-mode">
+      <div class="container pt-4">
+        <div class="row">
+          <div class="col-lg-3 col-md-3">
+            <div class="col-12 text-center items">
+              <img class="img50" src="./assets/img/mode-game-item1.png" alt="" />
+              <p style="font-size: 12px" class="text-center">Zombie</p>
+            </div>
+            <div class="col-12 text-center items">
+              <img class="img50" src="./assets/img/mode-game-item2.png" alt="" />
+              <p style="font-size: 12px" class="text-center">Đấu đội</p>
+            </div>
+            <div class="col-12 text-center items">
+              <img class="img50" src="./assets/img/mode-game-item3.png" alt="" />
+              <p style="font-size: 12px" class="text-center">Đặt bom</p>
+            </div>
+            <div class="col-12 text-center items">
+              <img class="img50" src="./assets/img/mode-game-item4.png" alt="" />
+              <p style="font-size: 12px" class="text-center">Sinh tồn</p>
+            </div>
+          </div>
+          <div class="col-lg-9 col-md-9">
+            <div class="row">
+              <div class="col-12">
+                <div class="row">
+                  <div class="col-4 item-mode">
+                    <img class="img-item img-fluid" src="./assets/img/mode-game-item1.png" alt="" />
+                  </div>
+                  <div class="col-8">
+                    <div class="title mt-4 mb-4">Zombie</div>
+                    <p class="desc-item">
+                      Nhiệm vụ là hãy cùng chiến binh chống lại sự lây nhiễm
+                      của Zombie. Zombie có khả năng lây nhiễm để tăng số
+                      lượng đồng loại. Người chơi lựa chọn 1 trong các thiên
+                      phú ngẫu nhiên, khi thành Zombie có thể chọn lại.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 mt-4 mb-4">
+                <div class="col-12" style="border-left: 1px solid #e62335">
+                  &nbsp; Bản đồ áp dụng
+                </div>
+                <div class="col-12">
+                  <div class="mt-4 d-flex justify-content-center" style="gap: 10px;">
+                    <img class="img1 img40" src="./assets/img/zoom_map1.png" alt=""></img>
+                    <img class="img2 img40" src="./assets/img/zoom_map2.png" alt=""></img>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer id="f">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <img
+            style="padding: 0 16px"
+            class="img-fluid"
+            src="./assets/img/VTC20Logo.png"
+            alt=""
+          />
+          <img
+            style="padding: 0 16px"
+            class="img-fluid"
+            src="./assets/img/Wizard20Game20Logo.png"
+            alt=""
+          />
+        </div>
+        <div class="row mt-4 mb-4">
+          <div class="col-4">
+            <div class="row">
+              <div class="col-12">
+                <img
+                  src="./assets/img/logo_top.png"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+              <div
+                class="col-12 mt-2"
+                style="font-size: 12px; text-align: justify"
+              >
+                Công ty cổ phần VTC dịch vụ di động <br />
+                Địa chỉ: 59 Phạm Văn Đồng, Mai Dịch, Cầu Giấy
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-4 d-flex flex-column justify-content-centers align-items-center"
+          >
+            <div>
+              <div class="phone">
+                <i class="fa-solid fa-phone"></i> &nbsp; SĐT:0849.6xx.xxx
+              </div>
+              <div class="email">
+                <i class="fa-solid fa-envelope"></i> &nbsp; Email:
+                vtcmobile@vtc.vn
+              </div>
+            </div>
+          </div>
+          <p class="col-4">
+            Giấy phép phê duyệt nội dung kịch bản trò chơi điện tử trên mạng
+            số 837/QĐ-BTTTT <br />
+            Người chịu trách nhiệm quản lý nội dung: <b>Nguyễn Tùng Dương</b>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="./js/index.js"></script>
+  <script>
+    const descArr = [
+      "Nhiệm vụ là hãy cùng chiến binh chống lại sự lây nhiễm của Zombie. Zombie có khả năng lây nhiễm để tăng số lượng đồng loại. Người chơi lựa chọn 1 trong các thiên phú ngẫu nhiên, khi thành Zombie có thể chọn lại.",
+      "Tiêu diệt càng nhiều địch thủ để giành thắng lợi cho đội. Đấu đội có thể tham gia đấu rank tự do, tham gia thi đấu để tăng điểm rank.",
+      "Bên tấn công phải phá hủy mục tiêu hoặc tiêu diệt toàn bộ kẻ địch. Bên phòng thủ cần gỡ bomb hoặc tiêu diệt toàn bộ kẻ địch, ngăn chặn bên tấn công đặt bomb. Bomb Defusal có thể tham gia đấu rank.",
+      "Dùng các loại vũ khí hạng nhẹ để tiêu diệt địch, dẫn dắt đội giành chiến thắng."
+    ]
+    const titleArr = [
+      "Zombie","Đấu đội", "Đặt bom", "Sinh tồn"
+    ]
+    const imgArr = [
+      {
+        src1: "./assets/img/zoom_map1.png",
+        src2: "./assets/img/zoom_map2.png",
+      },
+      {
+        src1: "./assets/img/doi1.png",
+        src2: "./assets/img/doi2.png",
+      },
+      {
+        src1: "./assets/img/bom1.png",
+        src2: "./assets/img/bom2.png",
+      },
+      {
+        src1: "./assets/img/sinhton1.png",
+        src2: "./assets/img/sinhton2.png",
+      }, 
+    ]
+    const items = document.querySelectorAll(".items");
+    items.forEach(function (item, index) {
+      item.onclick = function () {
+        document.querySelector(".img-item").src =`./assets/img/mode-game-item${index + 1}.png`
+        document.querySelector(".title").innerHTML = titleArr[index];
+        document.querySelector(".desc-item").innerHTML = descArr[index];
+        document.querySelector(".img1").src = imgArr[index].src1;
+        document.querySelector(".img2").src = imgArr[index].src2;
+      }
+    })
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+.img50 {
+  max-width: 50%;
+}
+.img40 {
+  max-width: 40%;
+}
+main .banner-game-mode {
+  background-image: url(./img/bg-allcd-mb.jpg);
+  background-size: cover;
+  height: 100vh;
+}
+main .banner-game-mode h2 {
+  font-size: 4.8vw;
+  font-weight: 700;
+}
+main .slider-game-mode {
+  background-image: url(./img/bg-game-modes.jpg);
+  background-size: cover;
+}
+.slider-game-mode .title {
+  font-size: 32px;
+  font-weight: bold;
+}
+.slider-game-mode .desc {
+  text-align: justify;
+}
+.items {
+  border: 1px solid rgba(0, 0, 0, 0);
+}
+.items:hover {
+  cursor: pointer;
+  border: 1px solid #e62335;
+}

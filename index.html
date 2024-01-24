@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Truy Kích</title>
+
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      rel="shortcut icon"
+      href="./assets/img/icon_title.ico"
+      type="image/x-icon"
+    />
+    <script
+      src="https://kit.fontawesome.com/203ae9be09.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./assets/style.css" />
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1 class="logo-top" title="TRUY KÍCH PC: GAME FPS MỚI RA MẮT">
+        <a title="TRUY KÍCH PC" href="#"
+          ><img
+            src="./assets/img/logo_top.png"
+            alt="TRUY KÍCH PC: GAME FPS MỚI RA MẮT"
+        /></a>
+      </h1>
+      <!-- nav -->
+      <ul class="nav nav-lap">
+        <li class="nav-item">
+          <a href="/">Trang chủ</a>
+        </li>
+        <li class="nav-item">
+          <a href="">Trò chơi <i></i></a>
+          <ul class="sub-nav">
+            <li><a href="gameMode.html">Chế độ</a></li>
+            <li><a href="characterGame.html">Nhân vật</a></li>
+            <li><a href="arsenal.html">Kho vũ khí</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a href="#news">Tin tức</a></li>
+        <li class="nav-item"><a href="#f">Hỗ trợ</a></li>
+        <li class="nav-item">
+          <a href="">Mạng xã hội <i></i></a>
+          <ul class="sub-nav">
+            <li><a href="">Fanpage</a></li>
+            <li><a href="">Group</a></li>
+            <li><a href="">Youtobe</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <div class="container-mobile">
+        <ul class="nav nav-mobile">
+          <li class="nav-item">
+            <a href="/">Trang chủ</a>
+          </li>
+          <ul class="sub-nav-mobile" style="padding-left: 0">
+            <li class="nav-item">
+              <a href="">Trò chơi <i></i></a>
+              <ul class="sub-nav-2">
+                <li><a href="gameMode.html">Chế độ</a></li>
+                <li><a href="characterGame.html">Nhân vật</a></li>
+                <li><a href="arsenal.html">Kho vũ khí</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a href="#news">Tin tức</a></li>
+            <li class="nav-item"><a href="#f">Hỗ trợ</a></li>
+            <li class="nav-item">
+              <a href="">Mạng xã hội <i></i></a>
+              <ul class="sub-nav-2">
+                <li><a href="">Fanpage</a></li>
+                <li><a href="">Group</a></li>
+                <li><a href="">Youtobe</a></li>
+              </ul>
+            </li>
+          </ul>
+        </ul>
+        <button class="btn icon-list-menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+      <div class="userName"></div>
+      <button class="log-in">
+        <span class="circle" aria-hidden="true">
+          <span class="icon arrow"></span>
+        </span>
+        <span class="button-text">Đăng nhập</span>
+      </button>
+
+      <button class="btn log-out">
+        <i class="fa-solid fa-right-from-bracket"></i>
+      </button>
+    </header>
+    <main>
+      <section class="banner-video">
+        <video
+          style="width: 100%"
+          src="assets/img/vd-bg.mp4"
+          poster=""
+          muted="muted"
+          autoplay="autoplay"
+          loop="loop"
+          class="vd-banner-bg"
+        ></video>
+        <div class="banner-content">
+          <h2>Truy kích</h2>
+          <p>Gia nhập chiến trường rực lửa và nhận ngàn phần quà hấp dẫn</p>
+        </div>
+      </section>
+      <section id="news" class="news-events">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 .col-md-12 news">
+              <div class="row">
+                <div class="col-12">
+                  <div class="row news-title">
+                    <div class="col-6 news-content">Tin tức</div>
+                    <p class="col-6 news-continue">Xem thêm</p>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12">
+                  <div class="row">
+                    <div class="col-6 item-news">
+                      <div class="img-news">
+                        <img
+                          src="./assets/img/news1.jpg"
+                          alt=""
+                          class="img-fluid"
+                        />
+                      </div>
+                      <div class="desc-img">
+                        <div class="title-img">
+                          BCN 16.1 - NEW YEAR, NEW CHANCES BÙNG NỔ NĂM MỚI VỚI
+                          LOẠT UPDATE HẤN DẪN
+                        </div>
+                        <div class="date-img">16-01-2024</div>
+                      </div>
+                    </div>
+                    <div class="col-6 item-news">
+                      <div class="img-news">
+                        <img
+                          src="./assets/img/news2.jpg"
+                          alt=""
+                          class="img-fluid"
+                        />
+                      </div>
+                      <div class="desc-img">
+                        <div class="title-img">
+                          VTC MOBILE FESTIVAL VỚI HƠN 4.000 GAME THỦ THAM GIA -
+                          “ĐẠI TIỆC” TRI N GIÀU CẢM XÚC
+                        </div>
+                        <div class="date-img">11-01-2024</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="row">
+                  <div class="col-6 item-news">
+                    <div class="img-news">
+                      <img
+                        src="./assets/img/news3.jpg"
+                        alt=""
+                        class="img-fluid"
+                      />
+                    </div>
+                    <div class="desc-img">
+                      <div class="title-img">
+                        BCN 16.1 - NEW YEAR, NEW CHANCES BÙNG NỔ NĂM MỚI VỚI
+                        LOẠT UPDATE HẤN DẪN
+                      </div>
+                      <div class="date-img">16-01-2024</div>
+                    </div>
+                  </div>
+                  <div class="col-6 item-news">
+                    <div class="img-news">
+                      <img
+                        src="./assets/img/news4.jpg"
+                        alt=""
+                        class="img-fluid"
+                      />
+                    </div>
+                    <div class="desc-img">
+                      <div class="title-img">
+                        VTC MOBILE FESTIVAL VỚI HƠN 4.000 GAME THỦ THAM GIA -
+                        “ĐẠI TIỆC” TRI N GIÀU CẢM XÚC
+                      </div>
+                      <div class="date-img">11-01-2024</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 .col-md-12 events">
+              <div class="row">
+                <div class="col-12 events-title" style="margin-bottom: 28px">
+                  Sự kiện
+                </div>
+                <div class="col-12">
+                  <div
+                    id="carouselExampleIndicators"
+                    class="carousel slide"
+                    data-bs-ride="carousel"
+                    data-bs-interval="2000"
+                  >
+                    <div class="carousel-indicators">
+                      <button
+                        type="button"
+                        data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide-to="0"
+                        class="active"
+                        aria-current="true"
+                        aria-label="Slide 1"
+                      ></button>
+                      <button
+                        type="button"
+                        data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide-to="1"
+                        aria-label="Slide 2"
+                      ></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img
+                          src="./assets/img/events1.jpg"
+                          class="d-block w-100"
+                          alt="events1"
+                        />
+                      </div>
+                      <div class="carousel-item">
+                        <img
+                          src="./assets/img/events2.jpg"
+                          class="d-block w-100"
+                          alt="events2"
+                        />
+                      </div>
+                    </div>
+                    <button
+                      class="carousel-control-prev"
+                      type="button"
+                      data-bs-target="#carouselExampleIndicators"
+                      data-bs-slide="prev"
+                    >
+                      <span
+                        class="carousel-control-prev-icon"
+                        aria-hidden="true"
+                      ></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button
+                      class="carousel-control-next"
+                      type="button"
+                      data-bs-target="#carouselExampleIndicators"
+                      data-bs-slide="next"
+                    >
+                      <span
+                        class="carousel-control-next-icon"
+                        aria-hidden="true"
+                      ></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="banner container">
+        <img class="img-fluid" src="./assets/img/img-banner.png" alt="" />
+      </section>
+      <section class="features">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 features-titles">Tính năng nổi bật</div>
+            <div
+              class="col-12 d-flex justify-content-center align-items-center"
+            >
+              <div class="features-carousel">
+                <div
+                  id="carouselExampleIndicators"
+                  class="carousel slide"
+                  data-bs-ride="carousel"
+                  data-bs-interval="2000"
+                >
+                  <div class="carousel-indicators">
+                    <button
+                      type="button"
+                      data-bs-target="#carouselExampleIndicators"
+                      data-bs-slide-to="0"
+                      class="active"
+                      aria-current="true"
+                      aria-label="Slide 1"
+                    ></button>
+                    <button
+                      type="button"
+                      data-bs-target="#carouselExampleIndicators"
+                      data-bs-slide-to="1"
+                      aria-label="Slide 2"
+                    ></button>
+                    <button
+                      type="button"
+                      data-bs-target="#carouselExampleIndicators"
+                      data-bs-slide-to="2"
+                      aria-label="Slide 3"
+                    ></button>
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img
+                        src="./assets/img/feature1.png"
+                        class="d-block w-100"
+                        alt="events1"
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="./assets/img/feature2.png"
+                        class="d-block w-100"
+                        alt="events2"
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="./assets/img/feature3.png"
+                        class="d-block w-100"
+                        alt="events2"
+                      />
+                    </div>
+                  </div>
+                  <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev"
+                  >
+                    <span
+                      class="carousel-control-prev-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next"
+                  >
+                    <span
+                      class="carousel-control-next-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="kol-comment">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 text-center title-comment">
+              KOL - STREAMER NHẬN XÉT GÌ VỀ TRUY KÍCH ?
+            </div>
+            <div class="col-12 video-comment">
+              <div class="row">
+                <div class="col-3 item-video-comment">
+                  <iframe
+                    width="149"
+                    height="150"
+                    src="https://www.youtube.com/embed/F4bIaMqVA-c"
+                    title="TRUY KÍCH PC - DEV NGUYỄN CƯỜI HẾT NẤC VỚI CHẾ ĐỘ ĐẦU TO CỰC FUNNY"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                  ></iframe>
+                  <div class="title-item">
+                    DEV NGUYỄN CƯỜI HẾT NẤC VỚI CHẾ Đ ...
+                  </div>
+                  <p class="desc-item">
+                    Big Head Hero là chế độ chơi chỉ có tại Truy Kích PC! Cùng
+                    khám phá xem Dev Nguyễn xử lý thế nào nhé!
+                  </p>
+                </div>
+                <div class="col-3 item-video-comment">
+                  <iframe
+                    width="149"
+                    height="150"
+                    src="https://www.youtube.com/embed/Rz_iyYs_Y-8"
+                    title="Truy Kích PC | Cách Top Thách Đấu Cày Rank Đặt Bom Với Tỉ Lệ Thắng Lên Tới 99%"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                  ></iframe>
+                  <div class="title-item">
+                    TỶ LỆ THẮNG LÊN TỚI 99%: CÁCH TOP ...
+                  </div>
+                  <p class="desc-item">
+                    Thần đồng FPS Smile GG đã lên tiếng. Xem trai đẹp bắn Truy
+                    Kích PC quá đẳng cấp!
+                  </p>
+                </div>
+                <div class="col-3 item-video-comment">
+                  <iframe
+                    width="149"
+                    height="150"
+                    src="https://www.youtube.com/embed/ip6AOak10sM"
+                    title="(TRUY KÍCH PC) CẶP SONG LONG CÀY NÁT RANK TRUY KÍCH PC CỰC GẮT"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                  ></iframe>
+                  <div class="title-item">
+                    CẶP SONG LONG CÀY NÁT RANK TRUY K ...
+                  </div>
+                  <p class="desc-item">
+                    Streamer Rambo bắn Truy Kích PC siêu bá đạo. Xem ngay các xạ
+                    thủ ơi!
+                  </p>
+                </div>
+                <div class="col-3 item-video-comment">
+                  <iframe
+                    width="149"
+                    height="150"
+                    src="https://www.youtube.com/embed/zBDs5jQvKh8"
+                    title="TRUY KÍCH PC - ANH EM TẢI GAME NGAY CÙNG RAMBO REFUND GAMING NÀO!"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                  ></iframe>
+                  <div class="title-item">
+                    ANH EM CHƠI GAME NGAY CÙNG RAMBO ...
+                  </div>
+                  <p class="desc-item">
+                    Cùng Rambo trải nghiệm bom tấn Truy Kích PC: Kịch tính, hài
+                    hước, bắn siêu đã tay.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="f">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <img
+              style="padding: 0 16px"
+              class="img-fluid"
+              src="./assets/img/VTC20Logo.png"
+              alt=""
+            />
+            <img
+              style="padding: 0 16px"
+              class="img-fluid"
+              src="./assets/img/Wizard20Game20Logo.png"
+              alt=""
+            />
+          </div>
+          <div class="row mt-4 mb-4">
+            <div class="col-4">
+              <div class="row">
+                <div class="col-12">
+                  <img
+                    src="./assets/img/logo_top.png"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </div>
+                <div
+                  class="col-12 mt-2"
+                  style="font-size: 12px; text-align: justify"
+                >
+                  Công ty cổ phần VTC dịch vụ di động <br />
+                  Địa chỉ: 59 Phạm Văn Đồng, Mai Dịch, Cầu Giấy
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-4 d-flex flex-column justify-content-centers align-items-center"
+            >
+              <div>
+                <div class="phone">
+                  <i class="fa-solid fa-phone"></i> &nbsp; SĐT:0849.6xx.xxx
+                </div>
+                <div class="email">
+                  <i class="fa-solid fa-envelope"></i> &nbsp; Email:
+                  vtcmobile@vtc.vn
+                </div>
+              </div>
+            </div>
+            <p class="col-4">
+              Giấy phép phê duyệt nội dung kịch bản trò chơi điện tử trên mạng
+              số 837/QĐ-BTTTT <br />
+              Người chịu trách nhiệm quản lý nội dung: <b>Nguyễn Tùng Dương</b>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
