@@ -28,7 +28,7 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="./assets/style.css" />
-    <link rel="stylesheet" href="./assets/arsenal.css" />
+
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
     </style>
@@ -109,63 +109,23 @@
         <i class="fa-solid fa-right-from-bracket"></i>
       </button>
     </header>
+
     <main>
-      <section class="banner-arsenal position-relative">
-        <h2 class="position-absolute">Kho vũ khí</h2>
-      </section>
-      <section class="items position-relative">
-        <div class="container title-items nav-lav">
-          <div class="row justify-content-center">
-            <div class="col-lg-1 col-md-2 col-sm-2 pt-2 pb-2 text-center item">
-              AKM
-            </div>
-            <div class="col-lg-1 col-md-2 col-sm-2 pt-2 pb-2 text-center item">
-              AWM
-            </div>
-            <div
-              class="hide-nav-mobile col-lg-1 col-md-2 col-sm-2 pt-2 pb-2 text-center item"
-            >
-              VSSM
-            </div>
-            <div
-              class="hide-nav-mobile col-lg-1 col-md-2 col-sm-2 pt-2 pb-2 text-center item"
-            >
-              UMP45
-            </div>
-            <div
-              class="hide-nav-mobile col-lg-1 col-md-2 col-sm-2 pt-2 pb-2 text-center item"
-            >
-              M1911
-            </div>
-            <div
-              class="hide-nav-mobile col-lg-1 col-md-2 col-sm-2 pt-2 pb-2 text-center item"
-            >
-              SK12
-            </div>
-            <div
-              class="hide-nav-mobile col-lg-1 col-md-2 col-sm-2 pt-2 pb-2 text-center item"
-            >
-              RPK
-            </div>
-            <div
-              class="hide-nav-mobile col-lg-1 col-md-2 col-sm-2 pt-2 pb-2 text-center item"
-            >
-              KURI
-            </div>
+      <div class="container" style="background-color: #f5eee6; margin: 0 auto">
+        <div class="row">
+          <div class="col-6">
+            <img class="img-fluid" src="./assets/img/user.jpg" alt="" />
+          </div>
+          <div class="col-6" style="color: #000">
+            <div class="pt-3 pb-3 text-center">Thành viên (1)</div>
+            <div>Họ và tên: Nguyễn Tùng Dương</div>
+            <div>MSV: 20232727</div>
+            <p>Sở thích: cờ vua, đọc sách, chơi điện tử</p>
           </div>
         </div>
-        <img class="img-character" src="./assets/img/akm.png" alt="" />
-        <div class="infor">
-          <div class="title">AKM</div>
-          <p>
-            Được sản xuất từ Nga, AKM được sử dụng rộng rãi trên thế giới bởi
-            giá thành rẻ, hỏa lực mạnh, độ tin cậy cao, độ bền và thiết kế đơn
-            giản của nó. AKM có mặt trong hầu hết các cuộc xung đột vũ trang ,
-            sử dụng đạn hạng nặng và có 2 chế độ, bắn từng viên và bắn tự động
-          </p>
-        </div>
-      </section>
+      </div>
     </main>
+
     <footer id="f">
       <div class="container">
         <div class="row">
@@ -224,37 +184,5 @@
         </div>
       </div>
     </footer>
-    <script src="./js/index.js"></script>
-    <script>
-      const img = [
-        "./assets/img/akm.png",
-        "./assets/img/awm.png",
-        "./assets/img/VSSM.png",
-        "./assets/img/mp5a3.png",
-        "./assets/img/m1911.png",
-        "./assets/img/s12k.png",
-        "./assets/img/rpk.png",
-        "./assets/img/kuri.png",
-      ];
-      const desc = [
-        "Được sản xuất từ Nga, AKM được sử dụng rộng rãi trên thế giới bởi giá thành rẻ, hỏa lực mạnh, độ tin cậy cao, độ bền và thiết kế đơn giản của nó. AKM có mặt trong hầu hết các cuộc xung đột vũ trang , sử dụng đạn hạng nặng và có 2 chế độ, bắn từng viên và bắn tự động",
-        "AWM là dòng súng bắn tỉa được biên chế rộng rãi trong quân đội Anh, được coi là chuẩn mực của sự chính xác của các loại súng bắn tỉa trên toàn thế giới. Sở hữu tầm bắn lên tới 1500m, hộp đạn có thể tháo rời, AWM là 1 trong các vũ khí thành công nhất tại Anh Quốc.",
-        "Phiên bản hiện đại hóa và cải tiến của dòng súng bắn tỉa vi âm VSS, bắn đạn hạng trung và có thể bắn tự động hoặc bán tự động.",
-        "Súng tiểu liên chiến đấu dành riêng cho lực lượng đặc biệt, được trang bị thước ngắm, bắn đạn hạng nhẹ. CÓ 2 chế độ bắn: từng viên và tự động.",
-        "Trải qua nhiều cuộc chiến và được gọi là phòng tuyến cuối cùng, bắn đạn hạng trung và chỉ có thể bắn bán tự động",
-        "Cấu tạo và cách nạp đạn tương tự như súng trường dòng AK, hỏa lực cực kì mạnh, bắn đạn shotgun, có thể bắn tự động liên tục",
-        "Súng máy hạng nhẹ được thiết kế theo kiểu AKM. bắn đạn hạng nặng và chỉ có thể bắn tự động",
-        "Dao Kuri thiết kế hiện đại với lưỡi được uốn cong và là  vũ khí đa năng được sử dụng trong quân đội.",
-      ];
-      const item = document.querySelectorAll(".item");
-      item.forEach((e, index) => {
-        e.onclick = (e) => {
-          document.querySelector(".img-character").src = img[index];
-          document.querySelector(".infor .title").innerHTML =
-            e.target.innerText;
-          document.querySelector(".infor p").innerHTML = desc[index];
-        };
-      });
-    </script>
   </body>
 </html>
